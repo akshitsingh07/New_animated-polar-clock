@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <style>
-        body{
-  margin: 0;
-  padding: 0;
-  background: #333;
-}
-
-canvas{
-  position: absolute;
-  top: -webkit-calc(50% - 250px);
-  top: calc(50% - 250px);
-  left: -webkit-calc(50% - 300px);
-  left: calc(50% - 300px);
-}
-
-div{
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  color: #fff;
-  font-size: 40px;
-  font-family: Arial;
-}
-
-span{
-  position: absolute;
-  bottom: 5px;
-  left: 5px;
-  color: #666;
-  font-size: 13px;
-  font-family: Arial;
-}
-
-span a{
-  text-decoration: none;
-  color: #0579f5;
-}
+        body {
+            margin: 0;
+            padding: 0;
+            background: #333;
+        }
+        
+        canvas {
+            position: absolute;
+            top: -webkit-calc(50% - 250px);
+            top: calc(50% - 250px);
+            left: -webkit-calc(50% - 300px);
+            left: calc(50% - 300px);
+        }
+        
+        div {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            color: #fff;
+            font-size: 40px;
+            font-family: Arial;
+        }
+        
+        span {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            color: #666;
+            font-size: 13px;
+            font-family: Arial;
+        }
+        
+        span a {
+            text-decoration: none;
+            color: #0579f5;
+        }
     </style>
     <canvas></canvas>
-<div>
-  Polar<br>
-  <b>Clock</b><br>
-</div>
-  <span>// <a href="#"> Flash Polar Clock</a> by Akshit Singh/span>
+    <div>
+        Polar<br>
+        <b>Clock</b><br>
+    </div>
+    <span>// <a href="#"> Flash Polar Clock</a> by Akshit Singh/span>
   <script>
-    var usr_color = 160; //Change value to change color scheme
+    var usr_color = 160; //Change value to change color schemes
 
 window.requestAnimFrame = (function(){
   return  window.requestAnimationFrame || 
